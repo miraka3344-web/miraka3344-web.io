@@ -12,14 +12,14 @@ text-align: center;
 }
 body{
         margin: 12px 0;
-    text-align:justify;
+    text-align: center;
     background-image: url("https://avatars.mds.yandex.net/i?id=4c73dd11bff5e44f1e168a4edf3a6355b3753c22-5870056-images-thumbs&n=13");
     background-size: cover;
     font-family: monospace;
     color: white;
 }
 header{
-width: 1080px;
+max-width: 1080px;
 padding: 16px;
 margin: 10px auto;
 border-radius: 32px;
@@ -60,4 +60,38 @@ backdrop-filter: blur(10px);
 }
 .projects .card{
     margin: 12px 0;
+}
+
+@media (max-width: 1080px){
+    h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+header{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+  width: 100%;
+}
+.info img{
+    width: 500px;
+}
+}
+@media (max-width: 800px){
+    .info img{
+        width: 300px;
+    }
+}
+@media (max-width: 600px){
+    .info img{
+        width: 100px;
+    }
+
 }
