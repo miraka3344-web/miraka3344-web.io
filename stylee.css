@@ -1,96 +1,162 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
-text-align: center;
+h1 {
+    text-align: center;
 }
-h2{
-text-align: center;
+
+h2 {
+    text-align: center;
 }
-body{
-        margin: 12px 0;
+
+body {
+    margin: 12px 0;
     text-align: center;
     background-image: url("https://avatars.mds.yandex.net/i?id=4c73dd11bff5e44f1e168a4edf3a6355b3753c22-5870056-images-thumbs&n=13");
     background-size: cover;
     font-family: monospace;
     color: white;
 }
-header{
-max-width: 1080px;
-padding: 16px;
-margin: 10px auto;
-border-radius: 32px;
-backdrop-filter: blur(10px); 
-}
-main{
-width: 1080px;
-padding: 16px;
-margin: 10px auto;
-border-radius: 32px;
-backdrop-filter: blur(10px);
+
+header {
+    max-width: 1080px;
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 32px;
+    backdrop-filter: blur(10px);
 }
 
-.info{
-display: flex;
-gap: 16px;
+main {
+    width: 1080px;
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 32px;
+    backdrop-filter: blur(10px);
 }
-.info img{
-border-radius: 12px;
+
+.info {
+    display: flex;
+    gap: 16px;
 }
-.info-short{
+
+.info img {
+    border-radius: 12px;
+}
+
+.info-short {
     display: flex;
     flex-direction: column;
 }
 
-footer{
+footer {
     width: 1080px;
-padding: 16px;
-margin: 10px auto;
-border-radius: 32px;
-backdrop-filter: blur(10px);
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 32px;
+    backdrop-filter: blur(10px);
 }
 
-.card{
+.card {
     border: 1px solid rgba(255, 255, 255, 0.486);
     border-radius: 32px;
     padding: 16px;
 }
-.projects .card{
+
+.projects .card {
     margin: 12px 0;
 }
-
-@media (max-width: 1080px){
-    h1{
-    font-size: 32px;
+#perks{
+    list-style: none;
 }
-h2{
-    font-size: 24px;
-}
-header{
-    width: 100%;
+.perk {
+    font-size: 16px;
+    font-weight: 900;
 }
 
-main{
-    width: 100%;
+@media (max-width: 1080px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .info img {
+        width: 500px;
+    }
 }
 
-footer{
-  width: 100%;
-}
-.info img{
-    width: 500px;
-}
-}
-@media (max-width: 800px){
-    .info img{
+@media (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .info img {
         width: 300px;
     }
 }
-@media (max-width: 600px){
-    .info img{
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .info img {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .info img {
         width: 100px;
     }
 

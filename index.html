@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylee.css" />
     <title>Портфолио</title>
   </head>
-  <body>
+  <body id="body">
     <header><h1>Портфолио</h1></header>
     <main>
       <div class="info">
@@ -30,14 +30,7 @@
           <h2>
 Умею работать на:
           </h2>
-          <ul>
-            <h3>
-            <li>C#</li>
-            <li>Aualonia C#</li>
-            <li>Javascript</li>
-            <li>Html</li>
-            <li>Css</li>
-            </h3>
+          <ul id="perks">
           </ul>
         </div>
         <h1>Опыт работы</h1>
@@ -49,10 +42,12 @@
         <div class="card">
           <h1>Сайт</h1>
           <p><h2>Небольшой сайт с магазином кроссовок</h2></p>
+          
         </div>
         <div class="card">
           <h1>Кликер</h1>
-          <p><h2>Кликер сделанный на Aualonia с некоторыми улучшенниями</h2></p>
+          <p><h2>Кликер сделанный на Aualonia с некоторыми улучшенниями</h2>
+          </p>
         </div>
       </div>
     </main>
@@ -63,5 +58,17 @@
                 <li><a href="https://github.com/miraka3344-web"><h2>GitHub</h2></a></li>
       </ul>
     </footer> 
+    <script>
+      let arr = ["C#","Aualonia C#","Git","Javascript","Html","CSS"]
+      let perks = document.getElementById("perks")
+
+      arr.forEach((item)=> {
+        let card = document.createElement("li")
+        card.classList.add("perk")
+        card.innerHTML =`${item}`
+        perks.appendChild(card)
+      })
+
+    </script>
   </body>
 </html>
