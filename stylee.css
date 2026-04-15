@@ -15,27 +15,48 @@ h2 {
 body {
     margin: 12px 0;
     text-align: center;
-    background-image: url("https://avatars.mds.yandex.net/i?id=4c73dd11bff5e44f1e168a4edf3a6355b3753c22-5870056-images-thumbs&n=13");
+    background-color:rgb(201, 201, 201);;
     background-size: cover;
     font-family: monospace;
     color: white;
 }
 
 header {
+    background-color:rgb(125, 125, 125);
+    border-radius: 12px 12px 0 0;
     max-width: 1080px;
     padding: 16px;
-    margin: 10px auto;
-    border-radius: 32px;
+    margin: auto;
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    margin: 10px;
+}
+
+header nav{
+    background-color:rgb(75, 75, 75);
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+header nav a{
+    color:rgb(0, 255, 170);
+    text-decoration: none;
 }
 
 main {
+    background-color:rgb(125, 125, 125);
     width: 1080px;
     padding: 16px;
-    margin: 10px auto;
-    border-radius: 32px;
+    margin: auto;
     backdrop-filter: blur(10px);
 }
+
 
 .info {
     display: flex;
@@ -47,21 +68,25 @@ main {
 }
 
 .info-short {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background-color:rgb(75, 75, 75);
+    border-radius: 12px;
 }
 
 footer {
+    background-color:rgb(125, 125, 125);
+    border-radius: 0 0 12px 12px ;
     width: 1080px;
     padding: 16px;
-    margin: 10px auto;
-    border-radius: 32px;
+    margin: auto;
     backdrop-filter: blur(10px);
 }
 
 .card {
-    border: 1px solid rgba(255, 255, 255, 0.486);
-    border-radius: 32px;
+      background-color:rgb(75, 75, 75);
+    border-radius: 8px;
     padding: 16px;
 }
 
